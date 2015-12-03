@@ -1,0 +1,31 @@
+{
+  "name": "jq-cli-wrapper",
+  "version": "0.1.0",
+  "description": "A npm wrapper around the jq cli",
+  "author": "James Young <jmeyoung@gmail.com> (http://jamsyoung.com/)",
+  "main": "",
+  "bin": {
+    "jq": "./jq-releases/jq-osx-amd64"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamsyoung/jq-cli-wrapper"
+  },
+  "bugs": {
+    "url": "https://github.com/jamsyoung/jq-cli-wrapper/issues"
+  },
+  "homepage": "https://github.com/jamsyoung/jq-cli-wrapper",
+  "engines": {
+    "node": "4.2.2",
+    "npm": "2.14.7"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": [
+    "cli-wrapper",
+    "jq",
+    "json"
+  ],
+  "license": "MIT"
+}
