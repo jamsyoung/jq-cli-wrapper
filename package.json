@@ -5,9 +5,11 @@
   "author": "James Young <jmeyoung@gmail.com> (http://jamsyoung.com/)",
   "main": "",
   "bin": {
-    "jq": "./jq-releases/jq-osx-amd64"
+    "jq": "./jq-releases/jq"
   },
-  "scripts": {},
+  "scripts": {
+    "preinstall": "scripts/link-proper-binary.sh"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jamsyoung/jq-cli-wrapper"
