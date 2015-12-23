@@ -8,6 +8,7 @@
     "jq": "./jq-releases/jq"
   },
   "scripts": {
+    "generate-changelog": "changelog-maker --group",
     "preinstall": "scripts/link-proper-binary.sh"
   },
   "repository": {
@@ -19,10 +20,12 @@
   },
   "homepage": "https://github.com/jamsyoung/jq-cli-wrapper",
   "engines": {
-    "node": ">=4.2.2"
+    "node": ">=4.2.3"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "changelog-maker": "2.0.0"
+  },
   "keywords": [
     "cli-wrapper",
     "jq",
