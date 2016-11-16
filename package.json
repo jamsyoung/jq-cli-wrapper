@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/jamsyoung/jq-cli-wrapper",
   "engines": {
-    "node": ">=4.2.3"
+    "node": ">=6.9.1"
   },
   "dependencies": {},
   "devDependencies": {
