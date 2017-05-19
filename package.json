@@ -9,7 +9,7 @@
   },
   "scripts": {
     "generate-changelog": "changelog-maker --group",
-    "preinstall": "scripts/link-proper-binary.sh"
+    "preinstall": "./scripts/link-proper-binary.sh"
   },
   "repository": {
     "type": "git",
