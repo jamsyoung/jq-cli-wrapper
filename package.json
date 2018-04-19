@@ -5,11 +5,10 @@
   "author": "James Young <jmeyoung@gmail.com> (http://jamsyoung.com/)",
   "main": "",
   "bin": {
-    "jq": "./jq-releases/jq"
+    "jq": "./vendor/jq"
   },
   "scripts": {
-    "generate-changelog": "changelog-maker --group",
-    "preinstall": "scripts/link-proper-binary.sh"
+    "postinstall": "rm -rf vendor; node scripts/link-binary.js"
   },
   "repository": {
     "type": "git",
@@ -20,16 +19,40 @@
   },
   "homepage": "https://github.com/jamsyoung/jq-cli-wrapper",
   "engines": {
-    "node": ">=6.9.1"
+    "node": ">=8.11.1"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "changelog-maker": "2.0.0"
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "dependencies": {
+    "bin-wrapper": "3.0.2"
   },
+  "devDependencies": {},
   "keywords": [
     "cli-wrapper",
     "jq",
     "json"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "bracketSpacing": false,
+    "jsxBracketSameLine": true,
+    "arrowParens": "avoid",
+    "proseWrap": "always",
+    "overrides": [
+      {
+        "files": "*.md",
+        "options": {
+          "printWidth": 100
+        }
+      }
+    ]
+  }
 }
