@@ -1,5 +1,18 @@
 # JQ CLI Wrapper Changelog
 
+## 2018-04-19, Version 1.0.0, @jamsyoung
+
+### Notable changes
+
+* Uses bin-wrapper to get the proper binary. No change in jq version. It's 1.5 btw.
+
+### Commits
+
+* [[`528c753b40`](https://github.com/jamsyoung/jq-cli-wrapper/commit/528c753b40)] - use
+  bin-wrapper(#8) (jamie young) [#8](https://github.com/jamsyoung/jq-cli-wrapper/pull/8)
+
+---
+
 ## 2016-11-16, Version 0.4.0, @jamsyoung
 
 ### Notable changes
@@ -20,6 +33,8 @@ issues.
 * [[`b0c44497ae`](https://github.com/jamsyoung/jq-cli-wrapper/commit/b0c44497ae)] - **deps**: set
   node engine to be >=, not exact (James Young
 
+---
+
 ## 2015-12-08, Version 0.3.0, @jamsyoung
 
 ### Notable changes
@@ -36,11 +51,15 @@ issues.
 * [[`d27aedab20`](https://github.com/jamsyoung/jq-cli-wrapper/commit/d27aedab20)] - **linux**: add
   support for linux 32-bit (James Young)
 
+---
+
 ## 2015-12-07, Version 0.2.0, @jamsyoung
 
 ### Notable changes
 
 * Support for Linux 64-bit
+
+---
 
 ## 2015-12-07, Version 0.1.0, @jamsyoung
 
