@@ -1,5 +1,19 @@
 # JQ CLI Wrapper Changelog
 
+## 2018-04-20, Version 1.0.2, @jamsyoung
+
+### Notable changes
+
+* Fixes process.arch install issue on linux
+
+### Commits
+
+* [[`76e7ac92ab`](https://github.com/jamsyoung/jq-cli-wrapper/commit/76e7ac92ab)] - process.arch is
+  not a function error on linux (#12) (jamie young)
+  [#12](https://github.com/jamsyoung/jq-cli-wrapper/pull/12)
+
+---
+
 ## 2018-04-19, Version 1.0.1, @jamsyoung
 
 ### Notable changes

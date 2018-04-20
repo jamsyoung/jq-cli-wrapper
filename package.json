@@ -1,6 +1,6 @@
 {
   "name": "jq-cli-wrapper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A npm wrapper around the jq cli",
   "author": "James Young <jmeyoung@gmail.com> (http://jamsyoung.com/)",
   "preferGlobal": true,
