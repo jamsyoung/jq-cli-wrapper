@@ -1,5 +1,18 @@
 # JQ CLI Wrapper Changelog
 
+## 2018-04-19, Version 1.0.1, @jamsyoung
+
+### Notable changes
+
+* Fixes chmod install issue
+
+### Commits
+
+* [[`089e4c57c8`](https://github.com/jamsyoung/jq-cli-wrapper/commit/089e4c57c8)] - Fix chmod
+  install error (#10) (jamie young) [#10](https://github.com/jamsyoung/jq-cli-wrapper/pull/10)
+
+---
+
 ## 2018-04-19, Version 1.0.0, @jamsyoung
 
 ### Notable changes
