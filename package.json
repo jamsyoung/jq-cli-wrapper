@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "A npm wrapper around the jq cli",
   "author": "James Young <jmeyoung@gmail.com> (http://jamsyoung.com/)",
-  "main": "",
+  "preferGlobal": true,
   "bin": {
     "jq": "./vendor/jq"
   },
   "scripts": {
-    "postinstall": "rm -rf vendor; node scripts/link-binary.js"
+    "postinstall": "rm -rf vendor; node link-binary.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,8 @@
     "linux"
   ],
   "dependencies": {
-    "bin-wrapper": "3.0.2"
+    "bin-wrapper": "3.0.2",
+    "debug": "3.1.0"
   },
   "devDependencies": {},
   "keywords": [

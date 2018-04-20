@@ -6,6 +6,7 @@
 
 const path = require('path');
 const fs = require('fs');
+const debug = require('debug')('jqcw');
 const BinWrapper = require('bin-wrapper');
 const base = 'https://github.com/stedolan/jq/releases/download/jq-1.5';
 const platform = process.platform === 'darwin' ? 'osx' : 'linux';
@@ -19,6 +20,16 @@ const bin = new BinWrapper()
   .use(jqExecutableName)
   .version('>=1.5');
 
+debug(JSON.stringify({base, platform, arch, jqExecutableName}));
+
 bin.run(['--version'], err => {
-  fs.symlinkSync(jqExecutableName, path.join('vendor', 'jq'));
+  if (err) {
+    debug(`Error from bin.run: ${err}`);
+  }
+
+  fs.symlink(jqExecutableName, path.join('vendor', 'jq'), err => {
+    if (err) {
+      debug(`Error creating symlink: ${err}`);
+    }
+  });
 });
