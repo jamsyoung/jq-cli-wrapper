@@ -14,7 +14,7 @@ const bin = new BinWrapper()
   .src(`${base}/jq-linux32`, 'linux', 'x32')
   .dest(path.join('vendor'))
   .use(jqExecutableName)
-  .version('>=1.5');
+  .version('>=1.6');
 
 debug(JSON.stringify({base, platform, arch, jqExecutableName}));
 
