@@ -10,8 +10,8 @@ const debug = require('debug')('jqcw');
 const BinWrapper = require('bin-wrapper');
 const base = 'https://github.com/stedolan/jq/releases/download/jq-1.5';
 const platform = process.platform === 'darwin' ? 'osx' : 'linux';
-const arch = process.platform === 'darwin' ? 'amd64' : process.arch;
-const jqExecutableName = `jq-${platform}-${arch}`;
+const arch = process.platform === 'darwin' ? '-amd64' : process.arch.replace(/^x/, '');
+const jqExecutableName = `jq-${platform}${arch}`;
 const bin = new BinWrapper()
   .src(`${base}/jq-osx-amd64`, 'darwin')
   .src(`${base}/jq-linux64`, 'linux', 'x64')
