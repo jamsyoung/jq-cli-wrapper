@@ -1,6 +1,6 @@
 {
   "name": "jq-cli-wrapper",
-  "version": "1.0.2",
+  "version": "1.6.1",
   "description": "A npm wrapper around the jq cli",
   "author": "James Young <jmeyoung@gmail.com> (http://jamsyoung.com/)",
   "preferGlobal": true,
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/jamsyoung/jq-cli-wrapper",
   "engines": {
-    "node": ">=8.11.1"
+    "node": ">=10.16.0"
   },
   "os": [
     "darwin",
