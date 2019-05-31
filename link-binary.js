@@ -1,14 +1,10 @@
 'use strict';
 
-// only supports macos and linux
-// assumption is the package.json's os property is limiting the package to these oses
-// i am sure if this is installed on some other os fire will rain from the sky
-
 const path = require('path');
 const fs = require('fs');
 const debug = require('debug')('jqcw');
 const BinWrapper = require('bin-wrapper');
-const base = 'https://github.com/stedolan/jq/releases/download/jq-1.5';
+const base = 'https://github.com/stedolan/jq/releases/download/jq-1.6';
 const platform = process.platform === 'darwin' ? 'osx' : 'linux';
 const arch = process.platform === 'darwin' ? '-amd64' : process.arch.replace(/^x/, '');
 const jqExecutableName = `jq-${platform}${arch}`;
