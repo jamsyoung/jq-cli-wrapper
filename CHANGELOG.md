@@ -1,14 +1,28 @@
 # JQ CLI Wrapper Changelog
 
+## 2019-05-31, Version 1.6.1
+
+### Notable changes
+
+- Installs jq-1.6
+- Fix for linux binary
+
+### Commits
+
+- [[`19cbc198bc`](https://github.com/jamsyoung/jq-cli-wrapper/commit/19cbc198bc)] - Update to jq-1.6
+  / node LTS 10.16 (#17) (jamie young)
+- [[`00d417b275`](https://github.com/jamsyoung/jq-cli-wrapper/commit/00d417b275)] - Fix linux binary
+  (#14) (Adam Mcgrath) [#14](https://github.com/jamsyoung/jq-cli-wrapper/pull/14)
+
 ## 2018-04-20, Version 1.0.2, @jamsyoung
 
 ### Notable changes
 
-* Fixes process.arch install issue on linux
+- Fixes process.arch install issue on linux
 
 ### Commits
 
-* [[`76e7ac92ab`](https://github.com/jamsyoung/jq-cli-wrapper/commit/76e7ac92ab)] - process.arch is
+- [[`76e7ac92ab`](https://github.com/jamsyoung/jq-cli-wrapper/commit/76e7ac92ab)] - process.arch is
   not a function error on linux (#12) (jamie young)
   [#12](https://github.com/jamsyoung/jq-cli-wrapper/pull/12)
 
@@ -18,11 +32,11 @@
 
 ### Notable changes
 
-* Fixes chmod install issue
+- Fixes chmod install issue
 
 ### Commits
 
-* [[`089e4c57c8`](https://github.com/jamsyoung/jq-cli-wrapper/commit/089e4c57c8)] - Fix chmod
+- [[`089e4c57c8`](https://github.com/jamsyoung/jq-cli-wrapper/commit/089e4c57c8)] - Fix chmod
   install error (#10) (jamie young) [#10](https://github.com/jamsyoung/jq-cli-wrapper/pull/10)
 
 ---
@@ -31,11 +45,11 @@
 
 ### Notable changes
 
-* Uses bin-wrapper to get the proper binary. No change in jq version. It's 1.5 btw.
+- Uses bin-wrapper to get the proper binary. No change in jq version. It's 1.5 btw.
 
 ### Commits
 
-* [[`528c753b40`](https://github.com/jamsyoung/jq-cli-wrapper/commit/528c753b40)] - use
+- [[`528c753b40`](https://github.com/jamsyoung/jq-cli-wrapper/commit/528c753b40)] - use
   bin-wrapper(#8) (jamie young) [#8](https://github.com/jamsyoung/jq-cli-wrapper/pull/8)
 
 ---
@@ -44,7 +58,7 @@
 
 ### Notable changes
 
-* Does not pin node engine anymore, updated to require 6.9.1+ (current LTS)
+- Does not pin node engine anymore, updated to require 6.9.1+ (current LTS)
 
 ### Known issues
 
@@ -53,11 +67,11 @@ issues.
 
 ### Commits
 
-* [[`019bc3c047`](https://github.com/jamsyoung/jq-cli-wrapper/commit/019bc3c047)] - **deps**: update
+- [[`019bc3c047`](https://github.com/jamsyoung/jq-cli-wrapper/commit/019bc3c047)] - **deps**: update
   node engine (#5) (Jamie Young) [#5](https://github.com/jamsyoung/jq-cli-wrapper/pull/5)
-* [[`4e99169d3f`](https://github.com/jamsyoung/jq-cli-wrapper/commit/4e99169d3f)] - **deps**: update
+- [[`4e99169d3f`](https://github.com/jamsyoung/jq-cli-wrapper/commit/4e99169d3f)] - **deps**: update
   node version to most current LTS (james young)
-* [[`b0c44497ae`](https://github.com/jamsyoung/jq-cli-wrapper/commit/b0c44497ae)] - **deps**: set
+- [[`b0c44497ae`](https://github.com/jamsyoung/jq-cli-wrapper/commit/b0c44497ae)] - **deps**: set
   node engine to be >=, not exact (James Young
 
 ---
@@ -66,7 +80,7 @@ issues.
 
 ### Notable changes
 
-* Support for Linux 32-bit
+- Support for Linux 32-bit
 
 ### Known issues
 
@@ -75,7 +89,7 @@ issues.
 
 ### Commits
 
-* [[`d27aedab20`](https://github.com/jamsyoung/jq-cli-wrapper/commit/d27aedab20)] - **linux**: add
+- [[`d27aedab20`](https://github.com/jamsyoung/jq-cli-wrapper/commit/d27aedab20)] - **linux**: add
   support for linux 32-bit (James Young)
 
 ---
@@ -84,7 +98,7 @@ issues.
 
 ### Notable changes
 
-* Support for Linux 64-bit
+- Support for Linux 64-bit
 
 ---
 
@@ -92,4 +106,4 @@ issues.
 
 ### Notable changes
 
-* Initial release - only support for OS X 64-bit
+- Initial release - only support for OS X 64-bit
