@@ -1,4 +1,3 @@
 jq-*
 node_modules
 package-lock.json
-vendor/
